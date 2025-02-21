@@ -11,18 +11,18 @@ export default function Skills() {
       </div>
       <div>
         {/* html css JAVASCRIPT node section */}
-        <div data-aos="fade-right" className="grid grid-cols-4  md:grid-cols-4 gap-5 place-items-center pb-10">
-          {["HTML", "CSS", "JAVASCRIPT", "NODE"].map((tech, index) => (
-            <span key={index} className="flex items-center gap-2">
-              <img
-                src={CheckMark}
-                alt="Checkmark"
-                className="w-5 h-5 md:w-8 md:h-8"
-              />
-              <p className="text-white text-lg md:text-xl">{tech}</p>
-            </span>
-          ))}
-        </div>
+        <div data-aos="fade-right" className="grid grid-cols-2 sm:grid-cols-4 gap-4 md:gap-5 place-items-center pb-10">
+      {["HTML", "CSS", "JAVASCRIPT", "NODE"].map((tech, index) => (
+        <span key={index} className="flex items-center gap-2 w-full justify-center">
+          <img
+            src={CheckMark}
+            alt="Checkmark"
+            className="w-5 h-5 md:w-8 md:h-8"
+          />
+          <p className="text-white text-xl text-center sm:text-lg md:text-xl whitespace-nowrap">{tech}</p>
+        </span>
+      ))}
+    </div>
         {/* border */}
         <div className="border-t-2 border-white pb-10  mx-20"></div>
         {/* react tailwind typescript flutter section */}
@@ -35,7 +35,7 @@ export default function Skills() {
               alt="Checkmark"
               className="w-5 h-5 md:w-8 md:h-8"
             />
-            <p className="text-white text-xl sm:text-lg md:text-xl whitespace-nowrap">{tech}</p>
+            <p className="text-white text-xl text-center sm:text-lg md:text-xl whitespace-nowrap">{tech}</p>
           </span>
         )
       )}
@@ -49,7 +49,7 @@ export default function Skills() {
             alt="Checkmark"
             className="w-5 h-5 md:w-8 md:h-8"
           />
-          <p className="text-white text-lg md:text-xl">GIT</p>
+          <p className="text-white text-xl text-center md:text-xl">GIT</p>
         </span>
       </div>
     </section>
